@@ -1,0 +1,174 @@
+<h1>Welcome to My E-commerce Store!</h1>
+        <p>This is where all our amazing products will be listed.</p>
+        
+        <div id="products-list">
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce App</title>  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+    <!-- We'll link our CSS here later -->
+</head>
+<body>
+    <header class="main-header">
+    <!-- Header Top Bar -->
+    <div class="header-top-bar">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="header-logo">
+                <a href="index.html">MyStore</a>
+            </div>
+
+            <!-- Deliver To (Simplified) -->
+            <div class="header-location">
+                <span class="nav-line-1">Deliver to</span>
+                <span class="nav-line-2">Kansas City 64127</span>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="header-search">
+                <div class="search-category-dropdown">
+                    <span>All</span>
+                    <i class="dropdown-arrow"></i> <!-- Placeholder for dropdown arrow -->
+                </div>
+                <input type="text" placeholder="Search MyStore">
+                <button type="submit">Search</button>
+            </div>
+
+            <!-- Right-side Navigation -->
+            <div class="header-nav-right">
+                <!-- Language -->
+                <div class="nav-item nav-language">
+                    <img src="https://flagcdn.com/w20/us.png" alt="US Flag" class="flag-icon">
+                    <span class="nav-line-2">EN</span>
+                    <i class="dropdown-arrow"></i>
+                </div>
+
+                <!-- Account & Lists -->
+                <div class="nav-item nav-account">
+                    <span class="nav-line-1">Hello, Sign In</span>
+                    <span class="nav-line-2">Account & Lists</span>
+                    <i class="dropdown-arrow"></i>
+                </div>
+
+                <!-- Orders -->
+                <div class="nav-item nav-orders">
+                    <span class="nav-line-1">Returns</span>
+                    <span class="nav-line-2">& Orders</span>
+                </div>
+
+                <!-- Cart -->
+                <div class="nav-item nav-cart">
+                    <a href="cart.html">
+                        <span class="cart-count">0</span>
+                        <span class="cart-icon">🛒</span>
+                        <span class="nav-line-2">Cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Bottom Bar (Secondary Navigation) -->
+    <div class="header-bottom-bar">
+        <div class="header-container">
+            <div class="nav-item nav-all-menu">
+                <span>☰ All</span>
+            </div>
+            <a href="#" class="nav-link">Amazon Haul</a>
+            <a href="#" class="nav-link">Medical Care</a>
+            <a href="#" class="nav-link">Best Sellers</a>
+            <a href="#" class="nav-link">Books</a>
+            <a href="#" class="nav-link">New Releases</a>
+            <a href="#" class="nav-link">Registry</a>
+            <a href="#" class="nav-link">Today's Deals</a>
+            <!-- Add more links as desired -->
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <section id="product-listing">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <img src="https://picsum.photos/id/237/300/200" alt="Product Image 1">
+                    <h3>Awesome Gadget Pro</h3>
+                    <p class="product-price">$99.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <img src="https://picsum.photos/id/1084/300/200" alt="Product Image 2">
+                    <h3>Super Widget XL</h3>
+                    <p class="product-price">$149.50</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <img src="https://picsum.photos/id/1060/300/200" alt="Product Image 3">
+                    <h3>Mega Device Mini</h3>
+                    <p class="product-price">$49.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <img src="https://picsum.photos/id/10/300/200" alt="Product Image 4">
+                    <h3>Ultra Tool Ultra</h3>
+                    <p class="product-price">$299.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My E-commerce App. All rights reserved.</p>
+    </footer>
+    
+    <!-- Your HTML content -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
+
+            <p>Loading products...</p>
+        </div>
+
+
+        `html
+    <article class="product-card" data-product-id="gadget-pro-1">
+        <img src="https://picsum.photos/id/237/300/200" alt="Product Image 1" data-product-image="https://picsum.photos/id/237/300/200">
+        <h3>Awesome Gadget Pro</h3>
+        <p class="product-price">$99.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-product-id="widget-xl-2">
+        <img src="https://picsum.photos/id/1084/300/200" alt="Product Image 2" data-product-image="https://picsum.photos/id/1084/300/200">
+        <h3>Super Widget XL</h3>
+        <p class="product-price">$149.50</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-product-id="device-mini-3">
+        <img src="https://picsum.photos/id/1060/300/200" alt="Product Image 3" data-product-image="https://picsum.photos/id/1060/300/200">
+        <h3>Mega Device Mini</h3>
+        <p class="product-price">$49.00</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-product-id="tool-ultra-4">
+        <img src="https://picsum.photos/id/10/300/200" alt="Product Image 4" data-product-image="https://picsum.photos/id/10/300/200">
+        <h3>Ultra Tool Ultra</h3>
+        <p class="product-price">$299.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
